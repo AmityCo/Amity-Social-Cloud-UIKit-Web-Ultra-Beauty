@@ -35,7 +35,7 @@ export {
   StoryPreview as AmityStoryPreview,
   StoryPreviewThumbnail as AmityStoryPreviewThumbnail,
 } from './v4/social/internal-components/StoryPreview';
-
+import './index.css'
 // v4 Social
 export {
   SocialHomePage as AmitySocialHomePage,

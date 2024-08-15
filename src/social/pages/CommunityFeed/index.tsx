@@ -30,6 +30,7 @@ import { BarsIcon } from '~/icons';
 
 import { useNavigation } from '~/social/providers/NavigationProvider';
 import { useGetActiveStoriesByTarget } from '~/v4/social/hooks/useGetActiveStories';
+import MobileNavbar from '../../../social/components/MobileNavbar';
 
 interface CommunityFeedProps {
   communityId: string;
@@ -85,14 +86,7 @@ const CommunityFeed = ({ communityId, isNewCommunity, isOpen, toggleOpen }: Comm
 
   return (
     <Wrapper>
-      <CommunitySideMenuOverlay isOpen={isOpen} onClick={toggleOpen} />
-      <StyledCommunitySideMenu isOpen={isOpen} />
-      <MobileContainer>
-        <BarsIcon onClick={toggleOpen} />
-        <HeadTitle>
-          <FormattedMessage id="sidebar.community" />
-        </HeadTitle>
-      </MobileContainer>
+      <MobileNavbar isOpen={isOpen} toggleOpen={toggleOpen} />
       <CommunityInfo communityId={communityId} stories={stories} />
       <FeedHeaderTabs
         data-qa-anchor="community-feed-header"

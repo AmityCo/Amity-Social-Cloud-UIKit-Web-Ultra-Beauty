@@ -35,13 +35,13 @@ export const DefaultButton = styled.button<{ fullWidth?: boolean }>`
 export const PrimaryButton = styled.button<{ fullWidth?: boolean }>`
   ${commonButtonStyles};
   border: none;
-  background-color: ${({ theme }) => theme.palette.primary.main};
+  background-color: #000;
   color: white;
   &:hover:not(:disabled) {
     opacity: 0.8;
   }
   &:disabled {
-    background-color: ${({ theme }) => theme.palette.primary.shade2};
+    background-color: #B0B0B0;
   }
 `;
 

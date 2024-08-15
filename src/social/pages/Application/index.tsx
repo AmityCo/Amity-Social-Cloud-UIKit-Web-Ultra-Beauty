@@ -21,6 +21,9 @@ import { StoryProvider } from '~/v4/social/providers/StoryProvider';
 import CommunityFeed from '../CommunityFeed';
 import ViewStoryPage from '../ViewStoryPage';
 import AmityDraftStoryPage from '../DraftPage';
+import { CommunitySideMenuOverlay, HeadTitle, MobileContainer } from '../NewsFeed/styles';
+import { BarsIcon } from '~/icons';
+import { useIntl } from 'react-intl';
 
 const ApplicationContainer = styled.div`
   height: 100%;
@@ -47,11 +50,12 @@ const Wrapper = styled.div`
 
 const Community = () => {
   const { page } = useNavigation();
+  const { formatMessage } = useIntl();
 
   const { client } = useSDK();
   const [socialSettings, setSocialSettings] = useState<Amity.SocialSettings | null>(null);
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   const toggleOpen = () => {
     setOpen(!open);
@@ -74,12 +78,10 @@ const Community = () => {
     <StoryProvider>
       <ApplicationContainer>
         <MainLayout aside={<StyledCommunitySideMenu activeCommunity={page.communityId} />}>
-          {page.type === PageTypes.Explore && <ExplorePage />}
-
+          {page.type === PageTypes.Explore && <ExplorePage toggleOpen={toggleOpen} isOpen={open} />}
           {page.type === PageTypes.NewsFeed && (
             <NewsFeedPage toggleOpen={toggleOpen} isOpen={open} />
           )}
-
           {page.type === PageTypes.CommunityFeed && (
             <CommunityFeed
               communityId={page.communityId}
@@ -88,13 +90,11 @@ const Community = () => {
               toggleOpen={toggleOpen}
             />
           )}
-
           {page.type === PageTypes.ViewStory && (
             <Wrapper>
               <ViewStoryPage targetId={page.targetId} type={page.storyType} />
             </Wrapper>
           )}
-
           {page.type === PageTypes.DraftPage && (
             <AmityDraftStoryPage
               mediaType={page.mediaType}
@@ -102,7 +102,6 @@ const Community = () => {
               targetType={page.targetType}
             />
           )}
-
           {page.type === PageTypes.CommunityEdit && (
             <CommunityEditPage communityId={page.communityId} tab={page.tab} />
           )}
@@ -112,7 +111,12 @@ const Community = () => {
           )}
 
           {page.type === PageTypes.UserFeed && (
-            <UserFeedPage userId={page.userId} socialSettings={socialSettings} />
+            <UserFeedPage
+              userId={page.userId}
+              socialSettings={socialSettings}
+              toggleOpen={toggleOpen}
+              isOpen={open}
+            />
           )}
 
           {page.type === PageTypes.UserEdit && <ProfileSettings userId={page.userId} />}

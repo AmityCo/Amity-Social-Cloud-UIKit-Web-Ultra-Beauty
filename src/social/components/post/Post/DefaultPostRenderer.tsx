@@ -261,6 +261,7 @@ const DefaultPostRenderer = (props: DefaultPostRendererProps) => {
   );
 
   return (
+    <div style={{marginTop: 8}}>
     <PostContainer data-qa-anchor="post" className={className}>
       <PostHeadContainer>
         <PostHeader postId={post?.postId} hidePostTarget={hidePostTarget} loading={loading} />
@@ -337,6 +338,7 @@ const DefaultPostRenderer = (props: DefaultPostRendererProps) => {
         </>
       )}
     </PostContainer>
+    </div>
   );
 };
 

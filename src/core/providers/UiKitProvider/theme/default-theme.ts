@@ -2,7 +2,7 @@ const defaultTheme = {
   palette: {
     alert: '#FA4D30',
     base: '#292B32',
-    primary: '#1054DE',
+    primary: '#F26B1C',
     secondary: '#FFD400',
     tertiary: '#FF305A',
     neutral: '#17181C',
@@ -15,7 +15,7 @@ const defaultTheme = {
   },
   typography: {
     global: {
-      fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, Arial, sans-serif',
+      fontFamily: 'Roboto, sans-serif',
       fontStyle: 'normal',
     },
     headline: {

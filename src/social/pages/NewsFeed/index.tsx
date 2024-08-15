@@ -15,6 +15,7 @@ import {
 import { BarsIcon } from '~/icons';
 import { useIntl } from 'react-intl';
 import { StoryTab } from '~/social/components/StoryTab';
+import MobileNavbar from '~/social/components/MobileNavbar';
 
 interface NewsFeedProps {
   isOpen: boolean;
@@ -27,12 +28,7 @@ const NewsFeed = ({ isOpen, toggleOpen }: NewsFeedProps) => {
 
   return (
     <Wrapper data-qa-anchor="news-feed">
-      <CommunitySideMenuOverlay isOpen={isOpen} onClick={toggleOpen} />
-      <StyledCommunitySideMenu isOpen={isOpen} />
-      <MobileContainer>
-        <BarsIcon onClick={toggleOpen} />
-        <HeadTitle>{formatMessage({ id: 'sidebar.community' })}</HeadTitle>
-      </MobileContainer>
+      <MobileNavbar isOpen={isOpen} toggleOpen={toggleOpen}/>
       <StoryTab type="globalFeed" />
       <Feed
         targetType={'globalFeed'}

@@ -16,12 +16,12 @@
   "loadMore": "Load More",
   "categoryList": "Categories",
   "recommendedList": "Recommended for you",
-  "exploreHeader.searchCommunityTitle": "Explore communities",
-  "exploreHeader.searchCommunityPlaceholder": "Search communities...",
+  "exploreHeader.searchCommunityTitle": "Explore forums",
+  "exploreHeader.searchCommunityPlaceholder": "Search forums...",
   "exploreHeader.createCommunityTitle": "or create your own!",
   "exploreHeader.createCommunityButton": "Create community",
   "backTitle": "Back",
-  "createCommunity": "Create Community",
+  "createCommunity": "Create Forum",
   "moderator": "Moderator",
   "moderatorMenu.promoteToModerator": "Promote to moderator",
   "moderatorMenu.dismissModerator": "Dismiss moderator",
@@ -38,7 +38,7 @@
   "post.unknownPost.title": "Something went wrong",
   "post.renderingError.description": "We couldn’t render this post.",
   "post.renderingError.title": "Something went wrong",
-  "post.community": "Community",
+  "post.community": "Forum",
   "post.myTimeline": "My Timeline",
   "post.wasLive": "was live",
 
@@ -59,7 +59,7 @@
   "community.updateSuccess": "Your community was successfully updated",
   "community.editProfile": "Edit profile",
   "community.join": "Join",
-  "community.communitySettings": "Community Settings",
+  "community.communitySettings": "Forum Settings",
   "community.returnTo": "Return to {communityName}",
   "community.leaveCommunityTitle": "Leave community?",
   "community.leaveCommunityBody": "You won’t no longer be able to post and interact in this community after leaving.",
@@ -70,17 +70,17 @@
   "community.cannotInteract": "Join community to interact with all posts",
   "community.removeUserFromCommunityTitle": "Remove user from community",
   "community.removeUserFromCommunityBody": "This user won't no longer be able to search, post. Continue?",
-  "community.name": "Community name",
+  "community.name": "Forum name",
   "community.about": "About",
   "community.category": "Category",
   "community.onlyadmincanpost": ">Only admin can post",
   "community.onlyadmins": "Choose to allow Only Admins to create posts in this community.",
-  "community.categorypermission": "Community permission",
+  "community.categorypermission": "Forum permission",
   "community.addmembers": "Add members",
   "community.posts": "posts",
   "community.members": "members",
   "community.settings": "Settings",
-  "community.leaveCommunity": "Leave Community",
+  "community.leaveCommunity": "Leave Forum",
 
   "CommunityMembers.members": "Members",
   "CommunityMembers.moderators": "Moderators",
@@ -89,10 +89,10 @@
   "EmptyFeed.TargetType.communityFeed": "This community's feed is empty",
   "EmptyFeed.TargetType.userFeed": "This user's feed is empty",
   "EmptyFeed.TargetType.myFeed": "Your feed is empty. Start your first post",
-  "EmptyFeed.exploreCommunity": "Explore Community",
+  "EmptyFeed.exploreCommunity": "Explore Forum",
 
   "UserFeed.tabs.timeline": "Timeline",
-  "community.exploreCommunities": "Explore Community",
+  "community.exploreCommunities": "Explore Forum",
   "community.permissions.postReview": "Post review",
   "community.permissions.storyComments": "Story comments",
   "community.permissions.approvePosts": "Approve member posts",
@@ -111,7 +111,7 @@
 
   "communityCreatedModal.title": "Customize your community",
   "communityCreatedModal.message": "You’ve successfully created a community! Now let's manage permissions that work best for you",
-  "communityCreatedModal.goToSettings": "Community settings",
+  "communityCreatedModal.goToSettings": "Forum settings",
   "communityCreatedModal.skip": "Skip for now",
 
   "post": "Post",
@@ -125,7 +125,7 @@
   "ProfileSettings.editProfile": "Edit profile",
   "ProfileSettings.returnTo": "Return to ",
 
-  "SideSectionMyCommunity.myCommunity": "My Community",
+  "SideSectionMyCommunity.myCommunity": "My Forum",
 
   "file.reUpload": "Click to re-upload the file",
 
@@ -159,7 +159,7 @@
   "layout.username": "Jackies",
 
   "chat.details.chatDetailes": "Chat Detail",
-  "chat.details.communityName": "Community Name",
+  "chat.details.communityName": "Forum Name",
 
   "message.flag": "flag",
   "message.unflag": "Unflag",
@@ -189,13 +189,13 @@
   "comment.edited": "Edited",
   "comment.readmore": "...Read more",
 
-  "communities.nocommunityfound": "No community found",
+  "communities.nocommunityfound": "No Forum found",
 
   "profile.setting": "Profile Settings",
 
   "sidesectioncommunity.newfeed": "NewsFeed",
   "sidesectioncommunity.explore": "Explore",
-  "sidesectioncommunity.community": "Community",
+  "sidesectioncommunity.community": "Forum",
 
   "communityFeed.join": "Join community to interact with all posts",
   "communityFeed.members": "Members",
@@ -203,8 +203,9 @@
 
   "files.all": "View all files",
 
-  "sidebar.community": "Community",
-
+  "sidebar.community": "Forum",
+  "sidebar.explore": "Explore",
+  "sidebar.user": "User profile",
   "CategoryCommunitiesList.emptyTitle": "It's empty here...",
   "CategoryCommunitiesList.emptyDescription": "No community found in this category",
 
